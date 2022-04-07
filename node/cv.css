@@ -1,0 +1,15 @@
+
+body {
+  background: #00241f;
+  background: radial-gradient(circle, #00241f 34%, #ff3a09 42%, #575459 54%);
+}
+.container2{
+  float: right;
+}
+.idiomas {
+  list-style: none;
+}
+.qualidades{
+  list-style: none;
+}
+/*# sourceMappingURL=cv.css.map */

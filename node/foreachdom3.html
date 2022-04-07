@@ -1,0 +1,30 @@
+<table>
+    <tr>
+        <td><input type="radio" name="r"></td>
+        <td>texto2</td>
+        <td>texto3</td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="r"></td>
+        <td>texto2</td>
+        <td>texto3</td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="r"></td>
+        <td>texto2</td>
+        <td>texto3</td>
+    </tr>
+</table>
+
+<script>
+    const filas = document.querySelectorAll('tr')
+    filas.forEach(obj => {
+        obj.addEventListener('click', obj2 => {
+            filas.forEach(fila => {
+                fila.style.background = 'white'
+            })
+            obj.style.background = 'cyan'
+            obj.querySelector('input[type=radio]').checked = true
+        })
+    })
+</script>

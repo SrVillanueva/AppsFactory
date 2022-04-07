@@ -1,0 +1,32 @@
+.imagen{
+    background-image: url(./panteon.jpg)
+    ;width: 722px
+    ;height: 480px
+    ;margin: auto;
+}
+.scroll1{
+    width: 70px
+    ;height: 150px
+    ;overflow: auto
+    ;display: inline-block
+    ;margin-top: 220px
+    ;margin-left: 190px;
+}
+.scroll2{
+    width: 70px
+    ;height: 150px
+    ;overflow: auto
+    ;display: inline-block
+    ;margin-top: 220px
+    ;margin-left: 70px;
+
+}
+.scroll3{
+    width: 70px
+    ;height: 150px
+    ;overflow: auto
+    ;display: inline-block
+    ;margin-top: 50px
+    ;margin-left: 70px;
+
+}

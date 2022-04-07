@@ -1,0 +1,42 @@
+body{
+    background: salmon;
+}
+h1{
+    color: blue;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing:  30px;
+}
+h2{color: white;
+text-align: left;
+background-color: burlywood;
+margin-top: 0px;}
+
+.container{width: 1000px;
+margin: auto;}
+
+.maria{display: block;margin: auto;
+
+}
+.fiore{
+    display: flex;
+}
+.fiore p{
+    padding-left: 20px;}
+.fiore h2{
+    margin-top: 0px;}
+.texto{
+    padding-left: 20px;
+}
+.derecha{float: right;
+margin-left: 15px;
+margin-bottom: 15px;}
+
+
+
+
+
+
+
+
+

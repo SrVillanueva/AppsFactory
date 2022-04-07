@@ -1,0 +1,69 @@
+<div>
+    <p>cuales de los siguientes lenguajes son orientados a objetos:
+        <span class="cyan">Java</span>,VB6,<Span class="cyan">C++</Span>,C,<span class="cyan">C=</span>,Cobol?
+    </p>
+    <input type="button" id="boton" value="dale cruck">
+
+
+</div>
+<script>
+    const pintame = () => {
+        document.querySelectorAll('.cyan').forEach(obj => {
+            obj.style.backgroundColor = 'cyan'
+        })
+    }
+    document.querySelector('#boton').addEventListener('click', pintame)
+</script>
+
+<div>
+    <br>
+
+    <input type="number" class="calculaçao">
+    <input type="number" class="calculaçao">
+    <input type="number" class="calculaçao">
+    <input type="button" id="result" value="calculame"><br>
+    <output></output>
+
+</div>
+<script>
+    const cal = () => {
+        let suma = 0;
+        document.querySelectorAll('.calculaçao').forEach(obj => {
+            suma += parseInt(obj.value)
+        })
+        document.querySelector('output').textContent = suma
+    }
+    document.querySelector('#result').addEventListener('click', cal)
+</script>
+
+
+<div>
+    <h1>cuestionario</h1>
+    <form>
+        <p> <label for="P1">¿Que super heroe es más fuerte?</label></p>
+        <p> <input type="radio" class="bien" id="MoonKnight">MoonKnight</p>
+        <p> <input type="radio" class="mal" id="Spawn">Spawn<br></p>
+        <p> <label for="P2">¿En que consiste el sentido aracnido de Spiderman?</label></p>
+        <p> <input type="radio" class="bien" id="chupomontero">te la agarra te la chupa</p>
+        <p> <input type="radio" class="mal" id="flip">do a flip <br></p>
+        <p> <label for="P2">¿Cual es el nombre verdadero de Spawn?</label></p>
+        <p> <input type="radio" class="bien" id="Albert">Albert Francis "Al" Simmons</p>
+        <p> <input type="radio" class="mal" id="Clark">Clark Kent</p>
+        <input type="button" id="btn" value="comprobar">
+
+    </form>
+</div>
+<script>
+    document.querySelector('#btn').addEventListener('click', _ => {
+        alert(1)
+        const radios = document.querySelectorAll('input[type=radio]:checked');
+        radios.forEach(radio => {
+            if (radio.classList.contains('bien')) {
+                radio.closest('p').style.background = 'green';
+            } else {
+                radio.closest('p').style.background = 'red';
+            }
+        })
+    })
+
+</script>

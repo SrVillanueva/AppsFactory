@@ -1,0 +1,34 @@
+<style>
+    .body {
+        margin: 0px;
+    }
+
+    .mHarmburguesa {
+        position: fixed;
+        height: 500px;
+        width: 500px;
+        background: orange;
+        right: -400px;
+        transition: 1s;
+    }
+
+    .desplegar {
+        right: 0px;
+    }
+
+    .cyan {
+        background: cyan;
+        width: 50px;
+        height: 50px;
+    }
+</style>
+<div class="mHarmburguesa">
+    <div class="cyan">
+
+    </div>
+</div>
+<script>
+    document.querySelector('.cyan').addEventListener('click', () => {
+        document.querySelector('.mHarmburguesa').classList.toggle('desplegar')
+    })
+</script>

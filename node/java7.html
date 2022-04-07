@@ -1,0 +1,44 @@
+<script>
+    const array = ['alfonso', 'manuel', 'juan', 'paco', 'ronaldo']
+    for (let i = 0; i < 5; i++) {
+        console.log(array[i]);
+
+    }
+</script>
+
+<script>
+    const num = [1, 9, 3, 8, 5, 7]
+    for (let i = 0; i < num.length; i++) {
+        console.log(num[i])
+        console.log(num[i] * 2)
+    }
+</script>
+
+<script>
+    const plusyneg = [2, -4, 3, -6, 4, -8, 5, -10, 0, 6]
+    let q = 0
+    let p = 0
+    let n = 0
+    for (let i = 0; i < plusyneg.length; i++) {
+        if (plusyneg[i] > 0) { p++ }
+        else if (plusyneg[i] < 0) { n++ }
+        else { q++ }
+    }
+    console.log('cantidad 0', q)
+    console.log('cantidad posit', p)
+    console.log('cantidad neg', n)
+</script>
+
+<script>
+    const plusyneg2 = [2, -4, 3, -6, 4, -8, 5, -10, 6, -12]
+    let pp = 0
+    let nn = 0
+    let w = 0
+    let r = 0
+    for (let i = 0; i < plusyneg2.length; i++) {
+        if (plusyneg2[i] > 0) { pp++; w = w + plusyneg2[i] }
+        else if (plusyneg2[i] < 0) { nn++; r = r + plusyneg2[i] }
+    }
+    console.log('positivos', w / pp)
+    console.log('negativos', r / nn)
+</script>

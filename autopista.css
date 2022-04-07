@@ -1,0 +1,96 @@
+@font-face {
+  font-family: roboto;
+  src: url(https://pablomonteserin.com/res/html5/ex/autopista/img/Roboto-Thin.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.menu {
+  background: rgba(0, 0, 0, 0.2);
+  list-style: none;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;}
+
+.menu li {
+  padding: 25px;
+  line-height: 2em;
+  box-sizing: border-box;
+display: inline;}
+
+.menu a{text-decoration: none;
+    color: white;}
+
+.cabecera{width: 1000px
+    ;margin: auto;
+}
+.contenedor{width: 1250px
+    ;margin: auto
+    ;font-family: roboto;
+}
+body{
+    background: url(./header.jpg)no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: roboto;
+
+}
+.inicio{
+margin-top: 600px;
+padding: 1px;
+box-sizing: border-box;
+
+}
+.inicio p{border-bottom: 2px solid gray;}
+.caja{
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+.boton{
+    background: green;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.texto{
+    background: white;
+}
+.contenedor2{
+    background: white;
+    text-align: center;
+}
+.col{width: 40%;
+display: inline-block;
+text-align: left;}
+.col img{
+    width: 100%;
+}
+.pie{
+    width: 1024px;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+.pie2{
+background: grey;
+}
+.pie3{
+text-align: center;
+}
+.pie3 h2{
+    margin-bottom: 30px;
+}
+.pie4{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-top: 1px solid red;
+}

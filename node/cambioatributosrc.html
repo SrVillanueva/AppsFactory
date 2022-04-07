@@ -1,0 +1,12 @@
+<img src="./PinguLinux_Link_Zelda.png" id="imagen" width="500px">
+
+<script>
+    let foto1 = true;
+    const cambiarImagen = _ => {
+        foto1 = !foto1;
+        if (foto1) obj.src = './PinguLinux_Bob_Marley.png';
+        else obj.src = './PinguLinux_Link_Zelda.png';
+    }
+    document.querySelector('#imagen').addEventListener('click', cambiarImagen);
+    const obj = document.querySelector('#imagen')
+</script>

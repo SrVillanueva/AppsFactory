@@ -1,0 +1,14 @@
+<form>
+    <select name="colores" id="colores">
+        <option value="red">rojo</option>
+        <option value="cyan">cyan</option>
+        <option value="green">betis</option>
+    </select>
+</form>
+<script>
+    const cambiame = document.querySelector('#colores')
+    cambiame.addEventListener('change', () => {
+        const color = cambiame.value
+        document.querySelector('body').style.background = color;
+    })
+</script>

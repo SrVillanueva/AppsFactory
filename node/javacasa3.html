@@ -1,0 +1,25 @@
+<script>
+    const plusyneg = [2, -4, 3, -6, 4, -8, 5, -10, 6, -12]
+    let p = 0
+    let n = 0
+    let pos = 0
+    let neg = 0
+
+    plusyneg.forEach((numeros) => {
+        if (numeros > 0) { p++; pos = pos + numeros }
+        else if (numeros < 0) { n++; neg = neg + numeros }
+    }
+    )
+
+    console.log('positivos', pos / p)
+    console.log('negativos', neg / n)
+</script>
+
+<script>
+    fetch('https://swapi.dev/api/people')
+        .then(res => res.json())
+        .then(data => {
+            // A partir de aquí escribiremos el código que muestra los nombres de los personajes de StarWars
+            console.log(data)
+        });
+</script>

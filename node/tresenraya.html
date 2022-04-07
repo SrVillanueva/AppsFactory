@@ -1,0 +1,66 @@
+<style>
+    button {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+        max-width: 300px;
+    }
+</style>
+
+<div class="container">
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+</div>
+
+<script>
+    let contador = 0
+    const tabla = ['', '', '', '', '', '', '', '', ''];
+    const botonpresionado = (i) => {
+        contador++;
+        const boton = i.target;
+        const color = contador % 2 ? 'cyan' : ' orange'
+        boton.style.backgroundColor = color
+        tabla[position] = color;
+        if (haGanado()) alert('gg noob' + color)
+    }
+    const winner = () => {
+        if (tabla[0] == tabla[1] && tabla[0] == tabla[2] && tabla[0]) {
+            return true;
+        }
+        else if (tabla[3] == tabla[4] && tabla[3] == tabla[5] && tabla[3]) {
+            return true;
+        }
+        else if (tabla[6] == tabla[7] && tabla[6] == tabla[8] && tabla[6]) {
+            return true;
+        }
+        else if (tabla[0] == tabla[3] && tabla[0] == tabla[6] && tabla[0]) {
+            return true;
+        }
+        else if (tabla[1] == tabla[4] && tabla[1] == tabla[7] && tabla[1]) {
+            return true;
+        }
+        else if (tabla[2] == tabla[5] && tabla[2] == tabla[8] && tabla[2]) {
+            return true;
+        }
+        else if (tabla[0] == tabla[4] && tabla[0] == tabla[8] && tabla[0]) {
+            return true;
+        }
+        else if (tabla[2] == tabla[4] && tabla[2] == tabla[6] && tabla[2]) {
+            return true;
+        }
+        return false
+    }
+    document.querySelectorAll('button').forEach((obj, i) => obj.addEventListener('click', (i) => botonpresionado(i, o)))
+</script>

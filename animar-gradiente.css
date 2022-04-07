@@ -1,0 +1,16 @@
+.gradiente{
+    background-size: 200% 200%;
+    background: linear-gradient(to top,red 0%,red 20%,gold 50%,brown 80%,violet 100%);
+}
+.gradiente :hover{
+    animation: gradiente 1s forwards;
+}
+@keyframes gradiente {
+  0% {
+    background-position: 10% 0%;
+  }
+
+  100% {
+    background-position: 91% 100%;
+  }
+}

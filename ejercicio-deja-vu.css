@@ -1,0 +1,36 @@
+h1{
+    text-align: right;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+.box{
+    text-align: center;
+    width: 800px;
+    margin: auto;
+
+
+}
+
+.box .titulacion{
+color: red;
+background-color: white;
+}
+
+body{background: slategray;}
+
+.box .articulo{
+    border-bottom: 3px solid black;
+}
+.box h2{
+    border-bottom: 3px solid white;
+}
+.box .fecha{
+    background-color: gray;
+    color: white;
+    font-size: 150%;
+}
+.box .frases{font-size: 130%;
+border-bottom: 1px dashed red;}
+.box .lugar{color: blue;}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const a = 'a'
+        const s = 's'
+        const d = 'd'
+        const generarNombre = (a, s, d) => {
+            if (a.length < 5 & s.length <= 5 & d.length <= 5) {
+                console.log(a.chartAt(0) = s.chartAt(0) = d.chartAt(0));
+            }
+            else {
+                console.log('error')
+            }
+        }
+        generarNombre('ffffff', 'ssssss', 'dddddd');
+    </script>
+
+    <script>
+        const g = 'g'
+        const f = 'f'
+        const h = 'h'
+        const generarNombre2 = (g, f, h) => {
+            if (g.length > 5 & f.length > 5 & h.length > 5) {
+                console.log(g.chartAt(0) = f.chartAt(0) = h.chartAt(0));
+                console.log('error')
+            }
+            else {
+
+            }
+        }
+        generarNombre2('gggggg', 'ffffff', 'hhhhhh');
+    </script>
+</body>
+
+</html>

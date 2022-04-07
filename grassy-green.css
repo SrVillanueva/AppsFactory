@@ -1,0 +1,112 @@
+@font-face{
+	font-family: Fuentegreen;
+	src:url(./fuente.woff)		
+}
+h1{font-family:Fuentegreen}
+h2{font-family: Fuentegreen}
+
+.container{
+width: 100%;
+}
+.lista{
+background: rgba( 22, 44 , 55, 0.7);
+display: inline-block;
+width: 100%;
+position: fixed;
+text-align: center;
+}
+.lista a{margin-left: 50px;
+margin-right: 50px;
+padding: 20px;}
+.menu{
+    list-style: none;;
+    display: inline-block;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+.titulo{
+    color: white;
+    text-align: center;
+    background: grey;
+    padding: 150px;
+
+}
+.foto{
+background: url(./pic01.jpg);
+height: 500px;
+}
+.baul{
+    width: 1000px;
+    margin: auto;
+    background-color: white;
+}
+.izquierda{
+    width: 650px;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+.derecha{
+    width: 300px;
+    display: inline-block;
+    margin-top: 0;
+    vertical-align: top;
+}
+.derecha ul{
+    list-style: none;
+
+}
+.derecha a{
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    color: black;
+}
+.pie{
+    background-color: grey;
+}
+.fila{
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+.columna{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+.lista2{
+list-style: none;
+}
+.lista2 li{margin-bottom: 10px;
+}
+.lista2 a{
+    color: black;
+}
+.media{list-style: none;
+
+}
+.media li{
+    display: inline-block;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.fb{
+    background-image: url(./fbck.png)
+    ;display: block;height: 40px;width: 40px;
+}
+.tw{
+    background-image: url(./twiiterblue.png)
+    ;display: block;height: 40px;width: 40px;
+}
+.you{
+    background-image: url(./youtube.jpg)
+    ;display: block;height: 40px;width: 40px;
+}
+

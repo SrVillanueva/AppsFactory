@@ -1,0 +1,189 @@
+<script>
+    const escenas = [
+        {
+            "id": 1,
+            "titulo": "beso inicial"
+        },
+        {
+            "id": 2,
+            "titulo": "beso final"
+        }
+    ]
+    const escena = escenas.find(obj => obj.id == 2)
+
+    console.log(escena);
+</script>
+
+<script>
+    const usuarios = [
+        {
+            "name": "Paco",
+            "isActive": false,
+            "edad": 18
+        },
+        {
+            "name": "Laura",
+            "isActive": false,
+            "edad": 21
+        },
+        {
+            "name": "Raquel",
+            "isActive": false,
+            "edad": 15
+        },
+        {
+            "name": "Juan",
+            "isActive": true,
+            "edad": 17
+        },
+        {
+            "name": "Alberto",
+            "isActive": false,
+            "edad": 50
+        },
+        {
+            "name": "Rodolfo",
+            "isActive": true,
+            "edad": 7
+        },
+    ];
+    const usuario = usuarios.find(obj => obj.edad == 17)
+    console.log(usuario.edad)
+</script>
+
+<script>
+    const usuarios2 = [
+        {
+            "name": "Paco",
+            "isActive": false,
+            "edad": 18
+        },
+        {
+            "name": "Laura",
+            "isActive": false,
+            "edad": 21
+        },
+        {
+            "name": "Raquel",
+            "isActive": false,
+            "edad": 15
+        },
+        {
+            "name": "Juan",
+            "isActive": true,
+            "edad": 17
+        },
+        {
+            "name": "Alberto",
+            "isActive": false,
+            "edad": 50
+        },
+        {
+            "name": "Rodolfo",
+            "isActive": true,
+            "edad": 7
+        },
+    ];
+    const activos = usuarios2.filter(obj => obj.isActive == true)
+    const edad = usuarios2.filter(obj => obj.edad >= 18)
+    console.log(activos)
+    console.log(edad)
+</script>
+
+<script>
+    let characters;
+    let collectedCharacters = [];
+    let collectedCharacters2 = [];
+
+    // 1
+    const getWomansName = () => {
+        const genero = characters.filter(obj => obj.gender == "female").map(obj => obj.name)
+        console.log(genero)
+    }
+    const sumaDePeso = () => {
+        const peso = characters.reduce((acc, el) => acc + parseInt(el.mass), 0)
+        console.log(peso)
+    }
+    const mediaDeAltura = () => {
+        const media = characters.reduce((acc, el) => acc + parseInt(el.height), 0)
+        console.log(media / characters.length);
+    }
+    const collectByIndex = (index) => {
+        let i = characters[index];
+        collectedCharacters.push(i);
+        console.log(collectedCharacters)
+    }
+    const getSmallerPeople = () => {
+        const chiquito = characters.map(characters => {
+            return {
+                ...characters,
+                height: characters.height - 10
+            }
+        })
+        console.log(chiquito)
+    }
+    const collectByName = (characterName) => {
+        const nombre = characters.find(obj => obj.name == characterName)
+        collectedCharacters.push(nombre);
+        console.log(collectedCharacters)
+    }
+    const removeByName = (characterName) => {
+        const quitar = collectedCharacters.filter(obj => obj.name !== characterName)
+        return quitar
+    }
+    const getCharacterFilms = (characterName) => {
+        const peliculas = characters.find(obj => obj.name == characterName)
+        return peliculas.films
+    }
+    const collectByName2 = (characterName) => {
+        const character = characters.find(obj => obj.name == characterName)
+        const charecterDeLaCollection = collectedCharacters2.find(c => c.name === characterName);
+        charecterDeLaCollection ? charecterDeLaCollection.quantity++ : collectedCharacters2.push({ ...character, quantity: 1 });
+        console.log(collectedCharacters2)
+    }
+    const mediaDeAltura2 = () => {
+        const media2 = collectedCharacters2.reduce((acc, el) => acc + parseInt(el.height), 0)
+        console.log(media2 / characters.length);
+    }
+    const removeByName2 = (charactersName) => {
+        const quitar2 = collectedCharacters2.filter(obj => obj.name !== charactersName)
+        return quitar2
+    }
+
+    fetch('https://swapi.dev/api/people')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            characters = data.results;
+            console.log(characters)
+            getWomansName()
+            getSmallerPeople()
+            sumaDePeso()
+            mediaDeAltura()
+            collectByIndex(1)
+            collectByName('Obi-Wan Kenobi')
+            console.log(collectedCharacters)
+            console.log(removeByName('Obi-Wan Kenobi'))
+            console.log(getCharacterFilms('C-3PO'))
+            console.log(collectByName2('Darth Vader'))
+            console.log(collectByName2('Darth Vader'))
+            mediaDeAltura2()
+            console.log(removeByName2('Darth Vader'))
+
+
+        });
+</script>
+
+<script>
+    const epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+
+    const frase = epic.reduce((acc, el) => `${acc} ${el}`);
+    console.log(frase); // a long time ago in a galaxy far far away
+</script>
+
+<script>
+    const numero = [1, 2, 3]
+    const suma = numero.reduce((acc, el) => acc + el)
+    const conteo = numero.reduce((acc, el) => acc + 1)
+    console.log(suma / numero.length)
+</script>

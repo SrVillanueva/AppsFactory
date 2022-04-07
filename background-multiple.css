@@ -1,0 +1,5 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background: url(./html-left.png)center left no-repeat,url(./html-right.png)no-repeat right center;
+}

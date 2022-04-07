@@ -1,0 +1,19 @@
+.gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 1000px;
+    margin: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+}
+
+.griditem{display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+
+}
+img {
+			width: 70px;
+			margin-bottom: 15px}

@@ -1,0 +1,47 @@
+<style>
+    .box,
+    .contenedor {
+        width: 500px;
+        height: 500px;
+        transition: 1s;
+        ;
+    }
+
+    .box1 {
+        background: url(./PinguLinux_Batman.png);
+    }
+
+    .box2 {
+        background: url(./PinguLinux_Link_Zelda.png)
+    }
+
+    .box3 {
+        background: url(./PinguLinux_Bob_Marley.png)
+    }
+
+    .linea {
+        display: flex;
+        width: 1500px;
+        transition: 1s;
+    }
+
+    .contenedor {
+        overflow: hidden;
+    }
+</style>
+<a href="#" class="boton">tira pa lante hostia</a>
+<div class="contenedor">
+    <div class="linea">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+    </div>
+</div>
+<script>
+    let contador = 0;
+    document.querySelector('.boton').addEventListener('click', () => {
+        contador = contador < 2 ? contador + 1 : 0
+        const movimiento = - contador * 500;
+        document.querySelector('.linea').style.marginLeft = movimiento + 'px'
+    })
+</script>

@@ -1,0 +1,7 @@
+div{
+		border-width: 35px;
+		padding: 20px;
+		-webkit-border-image:url(mundo.svg); 
+		border-image:url(mundo.svg);
+		border-style:solid
+	}

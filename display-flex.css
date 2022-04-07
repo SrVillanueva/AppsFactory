@@ -1,0 +1,15 @@
+.contenedor{
+    background-image: url(./bg.jpg);
+    width: 750px;
+    height: 571px;
+    margin: auto;
+        display: flex;  
+}
+
+.letras{
+    justify-content: space-evenly;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+       

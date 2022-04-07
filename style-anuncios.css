@@ -1,0 +1,138 @@
+.body{
+    display: inline-block;
+}
+.editorial{
+    background-color: grey;
+    margin: 0px;
+}
+.titulo{
+text-align: right;
+background-color: darkgrey;
+margin: 0px;
+border-bottom: dashed gray;
+}
+.div1{
+    display: inline-block;
+    width: 150px;
+    border-left: 10px;
+    padding: 10px;
+    vertical-align: top;
+}
+.div2{display: inline-block;
+    margin-left: 85px;
+    width: 150px;
+    padding: 10px;
+    vertical-align: top;
+
+
+}
+.div3{display: inline-block;
+    margin-left: 85px;
+    width: 150px;
+    padding: 10px;
+    vertical-align: top;
+
+}
+.div4{display: inline-block;
+    margin-left: 85px;
+    width: 150px;
+    padding: 10px;
+    vertical-align: top;
+
+}
+.CV001{
+    text-align: right;
+    color: white;
+    background-color: grey;
+}
+.CA001{
+    text-align: right;
+    color: white;
+    background-color: grey;
+}
+.VA001{
+    text-align: right;
+    color: white;
+    background-color: grey;
+}
+.VA002{
+    text-align: right;
+    color: white;
+    background-color: grey;
+}
+.VA003{
+    text-align: right;
+    color: white;
+    background-color: grey;
+}
+.VA004{
+    text-align: right;
+    color: white;
+    background-color: grey;
+}
+.VA005{
+    text-align: right;
+    color: white;
+    background-color: grey;
+}
+.EM001{
+    text-align: right;
+    color: white;
+    background-color: grey;
+}
+.h21{
+    background-color: darkgray;
+}
+.h22{
+    background-color: darkgray;
+
+}
+.h23{
+    background-color: darkgray;
+
+}
+.h24{
+    background-color: darkgray;
+
+}
+.CA002{
+    background-color: gray;
+    color: white;
+    text-align: right;
+}
+.CV002{ 
+    text-align: right;
+    color: white;
+    background-color: grey;
+
+}
+.CV003{ 
+    text-align: right;
+    color: white;
+    background-color: grey;
+
+}
+.CV004{ 
+    text-align: right;
+    color: white;
+    background-color: grey;
+
+}
+.CV005{ 
+    text-align: right;
+    color: white;
+    background-color: grey;
+
+}
+.EM002{ 
+    text-align: right;
+    color: white;
+    background-color: grey;
+}
+.EM003{
+     text-align: right;
+    color: white;
+    background-color: grey;}
+    .espacio{
+        overflow: auto;
+    }

@@ -1,0 +1,33 @@
+<script>
+    const azar = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
+    console.log(azar)
+    const numero = prompt('Introduce Numero');
+    if (numero == azar) {
+        console.log('no has ganao una mierda')
+    }
+    else {
+        console.log('eres basura humana');
+    }
+
+
+</script>
+
+<script>
+    const random = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
+    console.log(random)
+    for (let e = 0; e < 3; e++) {
+        let numero2 = prompt('Introduce Numero');
+        console.log(numero2)
+        if (numero2 == random) {
+            console.log('has ganao')
+            break;
+        }
+        else if (e < 2) {
+            console.log('prueba otra vez')
+
+        }
+        else {
+            console.log('has perdio')
+        }
+    }
+</script>

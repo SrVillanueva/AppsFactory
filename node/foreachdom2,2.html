@@ -1,0 +1,77 @@
+<h3>Motivo</h3>
+<p><input type="radio" name="opcion1">Cuento con varios años de experiencia muy sólida como profesional por lo cual me
+    creo capacitad@
+    para asumir las
+    responsabilidades del puesto que ustedes anuncian.</p>
+<p><input type="radio" name="opcion1">En relación al anuncio de referencia tengo el gusto de enviarle mi currículo ya
+    que, como verá en
+    el mismo, creo reunir
+    todos los requisitos para el puesto de trabajo que quieren cubrir.</p>
+<p><input type="radio" name="opcion1">El pasado día del mes corriente, se publicó una oferta de trabajo en la que se
+    hacía constar que
+    necesitaban cubrir un
+    puesto de trabajo.</p>
+<h3>Medallas</h3>
+<p><input type="radio" name="opcion2">Como he reseñado en el historial adjunto, aunque solo cuento años de experiencia,
+    confío en mi
+    afán de de superación
+    para llegar a poseer un dominio completo de la profesión. Creo contar con las aptitudes necesarias para poder
+    aportar
+    beneficios muy positivos a su organización.</p>
+<p><input type="radio" name="opcion2">Considero que mis características de formación y experiencia puedan corresponder
+    con las de su
+    anuncio y me complazco en
+    enviarles mi CV para su consideración.</p>
+<p><input type="radio" name="opcion2">Tanto el interés por ampliar mi carrera profesional, como mi capacidad de trabajo
+    y
+    responsabilidad, pueden resultar de
+    utilidad para una empresa consolidada como la suya.</p>
+<h3>Objetivo</h3>
+<p><input type="radio" name="opcion3">Agradecería la oportunidad de poder presentarme ante ustedes para contestar
+    cualquier
+    pregunta y
+    ampliar lo resumido en
+    mi historial.</p>
+<p><input type="radio" name="opcion3">Les agradecería me dejasen formar parte del proceso de selección.</p>
+<p><input type="radio" name="opcion3">Por todo ello espero que tenga en cuenta mi candidatura ante cualquier
+    necesidad
+    futura se ponga en
+    contacto conmigo.</p>
+<h3>Despedida</h3>
+<p><input type="radio" name="opcion4">Un cordial saludo.
+</p>
+<p><input type="radio" name="opcion4">En espera de sus noticias y sin otro particular.
+</p>
+<p><input type="radio" name="opcion4">Atentamente.</p>
+<output></output>
+<script>
+    document.querySelectorAll('input[type=radio]').forEach(obj => {
+        obj.addEventListener('click', _ => {
+            carta()
+        })
+    })
+
+    const cartoon = () => {
+        let carta = ''
+        document.querySelectorAll('input[type=radio]:checked').forEach(obj2 => {
+            carta += '<p>'+obj2.closest('p').textContent+'</p>'
+        })
+        document.querySelector('output').innerHTML = carta
+    }
+    carta()
+</script>
+  <script>
+// const cartoon = () => {
+   // let carta = ''
+  //  document.querySelectorAll('input[type=radio]:checked').forEach(obj2 => {
+//carta += '<p>' + obj2.closest('p').textContent + '</p>'
+  //  })
+  //  document.querySelector('output').innerHTML = carta
+  //  }
+    
+   // document.querySelectorAll('input[type=radio]').forEach(obj => {
+//obj.addEventListener('click', cartoon)
+  //  })
+  </script>
+
+  

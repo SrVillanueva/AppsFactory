@@ -1,0 +1,26 @@
+<script>
+    const nombres = ['ramon', 'pablo', 'manel', 'alfonso', 'willyrex']
+
+    nombres.forEach(nombre => console.log('conozco a ' + nombre));
+</script>
+
+<script>
+    const numeros = [1, 9, 3, 8, 5, 7]
+    numeros.forEach(num => console.log(num * 2))
+</script>
+
+<script>
+    const plusyneg = [2, -4, 3, -6, 4, -8, 5, -10, 0, 6]
+    let q = 0
+    let p = 0
+    let n = 0
+
+    plusyneg.forEach((numeros2) => {
+        if (numeros2 > 0) { p++ }
+        else if (numeros2 < 0) { n++ }
+        else { q++ }
+    });
+    console.log('ceros ', q)
+    console.log(' positivos ', p)
+    console.log('negativos ', n)
+</script>

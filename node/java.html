@@ -1,0 +1,233 @@
+<script>
+    let a = 5;
+    let b = 7;
+    let c = a;
+    a = b;
+    b = c
+    console.log(a); //Debería mostrar 7
+    console.log(b); //Debería mostrar 5
+</script>
+
+<script>
+    segundos = 60 * 60 * 24
+    console.log(segundos)
+</script>
+<script>
+    const euros = 7;
+    const dolares = 7 * 2;
+    console.log(dolares)
+</script>
+
+<script>
+    let d = 100;
+    let i = 100 * 1.21;
+    console.log(i)
+</script>
+
+<script>
+    const ancho = 4;
+    const alto = 7;
+    console.log(ancho * alto)
+</script>
+
+<script>
+    const centígrados = 20;
+    const fahrenheit = 68;
+    console.log(centígrados * 9 / 5 + 32)
+</script>
+
+<script>
+    const nombre = 'Juan';
+    const material = 'madera';
+    const dimensiones = 'grande';
+    const comentario = 'Que sea bonita, pero de una belleza estraña, indómita';
+    const caja = 'ha pedido una caja de';
+    const tamaño = 'con unas dimensiones';
+    console.log(nombre, caja, material, dimensiones, comentario)
+
+
+</script>
+<script>
+    const dato1 = 10;
+    const dato2 = 10;
+    if (dato1 == dato2) { console.log('exito'); }
+
+</script>
+
+<script type="text/javascript">
+    if (10 == 10) {
+        console.log('You got a true!');
+    } else {
+        console.log('You got a false!');
+    }
+</script>
+
+<script>
+    const nota = 3;
+    const cinco = 5;
+    if (nota > cinco) {
+        console.log("Aprobado");
+    } else if (nota == cinco) {
+        console.log('Aprobado por los pelos');
+    } else {
+        console.log('Suspenso');
+    }
+</script>
+
+<script>
+    const h = 5;
+    if (h > 0) console.log('positive');
+    else console.log('negative');
+
+    if (h % 2) console.log('impar');
+    else console.log('par');
+
+    if (h % 5) console.log('multiplo');
+    else console.log('no multiplo');
+
+    if (h > 100) console.log('mayor');
+    else console.log('menor');
+</script>
+
+<script>
+    const n1 = 5;
+    const n2 = 7;
+    const op = '+';
+    let r
+    if (op == '+') {
+        r = n1 + n2;
+    }
+    else if (op == '-') {
+        r = n1 - n2;
+    }
+    else if (op == '/') {
+        r = n1 / n2;
+    }
+    else if (op == '*') {
+        r = n1 * n2
+    }
+    console.log(r)
+</script>
+
+<script>
+    const n3 = 7;
+    const n4 = 9;
+    const n5 = 10;
+    if (n3 > n4) { console.log('n3 es mayor que n4'); }
+    else { console.log('n4 es mayor que n3'); }
+    console.log(n3 > n4 ? 'n3 es mayor que n4' : 'n4 es mayor que n3');
+
+    if (n5 % 2) { console.log('n5 es par'); }
+    else { console.log('n5 es impar'); }
+    console.log(n5 % 2 ? 'n5 es par' : 'n5 es impar');
+
+</script>
+
+<script>
+    const color = 'amarillo';
+    switch (color) {
+        case 'rojo':
+            console.log('Has escogido rojo');
+            break;
+        case 'azul':
+            console.log('Has escogido azul');
+            break;
+        case 'amarillo':
+            console.log('Has escogido amarillo');
+            break;
+        default:
+            console.log('No has escogido ningún color de la lista!');
+    }
+</script>
+
+
+<script>
+
+    let golosina = 'nubes';
+
+    switch (golosina) {
+        case 'chicle':
+            console.log('Has escogido un chicle');
+            break;
+        case 'gominola':
+            console.log('Has escogido una gominola');
+            break;
+        case 'regaliz':
+            console.log('Has escogido un regaliz');
+            break;
+        default:
+            console.log('Has escogido un regaliz');
+    }
+</script>
+<script>
+    for (let i = 0; i <= 100; i = i + 2) {
+        console.log(i);
+    }
+
+</script>
+
+<script>
+    for (let i = 0; i <= 100; i++) {
+        if (i % 2 == 0) continue;
+        console.log(i);
+    }
+</script>
+
+<script>
+    for (let t = 1; t <= 20; t++) {
+        if (t % 3 == 0 && t % 5 == 0) {
+            console.log('FizzBuzz');
+
+        } else if (t % 3 == 0) {
+            console.log('Fizz');
+
+        } else if (t % 5 == 0) {
+            console.log('Buzz');
+        }
+        else {
+            console.log(t)
+        }
+
+    }
+
+</script>
+
+<script>
+    for (let e = 1; e <= 9; e++) {
+        for (let j = 1; j <= 10; j++) {
+            let r = (e * j)
+            console.log(e + '*' + j + '=' + r)
+        }
+    }
+
+</script>
+
+<script>
+    for (let ñ = 7; ñ <= 7; ñ++) {
+        for (let l = 0; l <= 10; l++) {
+            let r = (ñ * l)
+            console.log(ñ + '*' + l + '=' + r)
+        }
+    }
+</script>
+
+<script>
+    const base = 2;
+    const exponente = 5;
+    let f = 1;
+    let g = 0;
+    while (g < exponente) {
+        f = f * base;
+        g++
+    }
+    console.log(f)
+</script>
+
+<script>
+    const factor = 9;
+    let resultado = 1
+    for (let v = 1; v <= factor; v++) {
+        resultado = resultado * v;
+    }
+    console.log(resultado);
+</script>

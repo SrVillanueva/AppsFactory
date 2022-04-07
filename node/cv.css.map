@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,IAAI,CAAA;EACA,UAAU,EAAE,OAAY;EAC5B,UAAU,EAAE,8DAAwF;CACnG",
+    "sources": [
+        "cv.scss"
+    ],
+    "names": [],
+    "file": "cv.css"
+}

@@ -1,0 +1,22 @@
+<style>
+    div {
+        width: 500px;
+        height: 500px;
+        background: cyan;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<input type="button" value="pulsa" class="boton">
+<div></div>
+
+<script>
+    const beti = document.querySelector('div')
+    document.querySelector('.boton').addEventListener('click', () => {
+        beti.classList.add('animate__animated', 'animate__flash')
+
+        beti.addEventListener('animationend', () => {
+            beti.classList.remove('animate__animated', 'animate__flash');
+        });
+    })
+</script>

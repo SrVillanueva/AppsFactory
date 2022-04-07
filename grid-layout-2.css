@@ -1,0 +1,15 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.boxrosa{
+    background: pink;
+}
+.boxazul{
+    background: blue;
+    grid-row: 1/3;
+}
+.boxnaranja{
+    background: orange;
+}

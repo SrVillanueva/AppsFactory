@@ -1,0 +1,56 @@
+body{
+ background-image: url(./imatges/bg.gif) ;
+}
+.container{
+   width: 965px;margin: auto;background-color: white;
+}
+.medio{
+    text-align: center;
+}
+.enlaces{
+    float: right;    
+}
+.menu1 li{
+    list-style: none;
+    float: right;
+}
+.menu1 a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+.menu1 li :hover{
+    background-color: blue;
+}
+.web{width: 500px;
+padding-left: 30px;
+}
+.ciber a{
+    height: 100px;
+    color: black;
+    text-decoration: none;
+
+}
+.menu2{float: right;padding: 0;}
+.menu2 a{display: inline-block;
+    color: black;
+    text-decoration: none;
+    ; 
+}
+.menu2 li :hover{
+    background-color: blue;
+}
+.menu2 li{
+    float: left;list-style: none;
+}
+
+.col{
+    display: inline-block;
+    width: 265px;
+    padding: 20px;  
+}
+.col h2{color: brown;}
+
+.footer a{
+    color: black;
+text-decoration: none;}

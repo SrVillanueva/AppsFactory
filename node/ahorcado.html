@@ -1,0 +1,62 @@
+<style>
+    #ahorcado {
+        height: 212px;
+        width: 204px;
+        background-image: url('./hangman-game_pm-1024x212.png');
+    }
+
+    #winner {
+        display: none;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        font-size: 5rem;
+        position: fixed;
+    }
+</style>
+
+<h1>juego ahoracado javascript</h1>
+<p>introduzca una letra</p>
+<input type="text" maxlength="1" id="letra"> <button id="comprobar">comprobar</button>
+<p id="output"></p>
+<div id="ahorcado"></div>
+<div id="winner"></div>
+<p>gg</p>
+
+
+<script>
+    String.prototype.replaceAt = function (index, character) { return this.substr(0, index) + character + this.substr(index + character.length); }
+    const palabros = ['pirata', 'calvo', 'obsesionado', 'cañones']
+    const numsec = palabros[Math.floor(Math.random() * palabros.length)]
+
+    let palabroConGuiones = numsec.replace(/./g, "_ ");
+    let fallos = 0
+    document.querySelector('#output').innerHTML = palabroConGuiones
+    document.querySelector('#comprobar').addEventListener('click', () => {
+
+        let letra = document.querySelector('#letra').value
+        let hasfallao = true
+        for (const i in numsec) {
+            if (letra == numsec[i]) {
+                palabroConGuiones = palabroConGuiones.replaceAt(i * 2, letra);
+                hasfallao = false
+            }
+        }
+        if (hasfallao) {
+            alert(fallos)
+            fallos++
+            document.querySelector('#ahorcado').style.backgroundPosition = -(212 * fallos) + 'px 0'
+            if (fallos == 4) {
+                alert('perdiste wachin')
+            } else {
+                if (palabroConGuiones.indexOf('_') < 0) {
+                    alert('victoria royale')
+                    Document.querySelector('#winner').style.display = 'flex'
+                }
+            }
+        }
+        document.querySelector('#output').innerHTML = palabroConGuiones
+        document.querySelector('#letra').value = '';
+        document.querySelector('#letra').focus();
+    })
+</script>

@@ -1,0 +1,29 @@
+<div>
+    <form>
+        <p> <label for="P1">Diseño</label></p>
+        <p> <input type="radio" value="0" name="option1">diseño lo da cliente</p>
+        <p> <input type="radio" value="200" name="option1">Diseño yo<br></p>
+        <p> <label for="P2">Tienda</label></p>
+        <p> <input type="radio" value="0" name="option2">no carrito de compra</p>
+        <p> <input type="radio" value="350" name="option2">carrito de compra <br></p>
+        <p> <label for="P2">Membership</label></p>
+        <p> <input type="radio" value="0" name="option3">No sub</p>
+        <p> <input type="radio" value="50" name="option3">Le sub</p>
+        <output></output>
+    </form>
+</div>
+<script>
+    document.querySelectorAll('input[type=radio]').forEach(obj => {
+        obj.addEventListener('click', _ => {
+            cprecio()
+        })
+    })
+    const cprecio = _ => {
+        let precio = 0
+        document.querySelectorAll('input[type=radio]:checked').forEach(obj2 => {
+            precio += parseInt(obj2.value)
+        })
+        document.querySelector('output').innerHTML = precio + '€ '
+    }
+    cprecio()
+</script>
